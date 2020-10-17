@@ -15,9 +15,10 @@ a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-h3 {
+h1 {
   text-align: center;
-  margin-bottom: 0;
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h4 {
   position: relative;
