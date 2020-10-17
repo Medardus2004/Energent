@@ -9,6 +9,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EnergentComponent } from './energent/energent.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AngebotDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    NavbarComponent
+    NavbarComponent,
+    EnergentComponent
   ],
   imports: [
     BrowserModule,
