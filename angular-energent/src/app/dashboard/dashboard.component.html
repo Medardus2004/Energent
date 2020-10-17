@@ -1,0 +1,9 @@
+<h3>Erneuerbare Energien</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let produkt of produkte" class="col-1-4"
+     routerLink="/detail/{{produkt.id}}">
+    <div class="module hero">
+      <h4>{{produkt.name}}</h4>
+    </div>
+  </a>
+</div>

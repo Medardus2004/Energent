@@ -1,10 +1,8 @@
 <h2>Unser Angebot</h2>
 <ul class="heroes">
-  <li *ngFor="let produkt of produkte"
-      [class.selected]="produkt === selectedProdukt"
-      (click)="onSelect(produkt)">
+  <li *ngFor="let produkt of produkte">
+      <a routerLink="/detail/{{produkt.id}}">
     <span class="badge">{{produkt.id}}</span> {{produkt.name}}
+        </a>
   </li>
 </ul>
-
-<app-angebot-detail [produkt]="selectedProdukt"></app-angebot-detail>

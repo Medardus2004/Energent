@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { AngebotComponent } from './angebot/angebot.component';
 import { AngebotDetailComponent } from './angebot-detail/angebot-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AngebotComponent,
     AngebotDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
