@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Produkt} from "../Produkt";
-import {Produkte} from "../ProduktListe"
 import {AngebotService} from "../angebot.service"
-
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-angebot',
@@ -11,7 +10,7 @@ import {AngebotService} from "../angebot.service"
 })
 export class AngebotComponent implements OnInit {
 
-  produkte = Produkte;
+  produkte: Produkt[];
   selectedProdukt: Produkt;
 
   getProdukte(): void {
@@ -21,9 +20,10 @@ export class AngebotComponent implements OnInit {
 
   onSelect(produkt: Produkt): void {
     this.selectedProdukt = produkt;
+    this.messageService.add(`HeroesComponent: Selected hero id=${produkt.id}`);
   }
 
-  constructor(private angebotService: AngebotService) { }
+  constructor(private angebotService: AngebotService, private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.getProdukte();
