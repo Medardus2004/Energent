@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EnergentComponent } from './energent/energent.component';
+import { KontaktComponent } from './kontakt/kontakt.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EnergentComponent } from './energent/energent.component';
     MessagesComponent,
     DashboardComponent,
     NavbarComponent,
-    EnergentComponent
+    EnergentComponent,
+    KontaktComponent
   ],
   imports: [
     BrowserModule,
