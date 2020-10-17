@@ -15,7 +15,8 @@ export class AngebotComponent implements OnInit {
   selectedProdukt: Produkt;
 
   getProdukte(): void {
-    this.produkte = this.angebotService.getProdukte();
+    this.angebotService.getProdukte()
+      .subscribe(produkte => this.produkte = produkte);
   }
 
   onSelect(produkt: Produkt): void {
