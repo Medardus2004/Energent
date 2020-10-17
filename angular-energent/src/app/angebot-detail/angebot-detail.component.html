@@ -1,13 +1,105 @@
 
 <div *ngIf="produkt">
 
-  <h2>{{produkt.name | uppercase}} Details</h2>
+ <!-- <h2>{{produkt.name | uppercase}} Details</h2>
   <div><span>id: </span>{{produkt.id}}</div>
   <div>
     <label>name:
       <input [(ngModel)]="produkt.name" placeholder="name"/>
     </label>
+  </div> -->
+
+
+<div *ngIf="produkt.id == 11">
+
+  <h2>{{produkt.name | uppercase}}</h2>
+  <div>
+    Wir erstellen Analysen zur nachhaltigen Senkung der Energiekosten und entwickeln Konzepte zur Umsetzung betrieblicher Energieeinsparmaßnahmen.
+  </div>
+  <li>Beratung mit 80 % Zuschuss im BAFA-Programm Energieberatung Mittelstand</li>
+  <li>Ermittlung der Energieverluste bei der Gebäudehülle und der Anlagentechnik, auch nach DIN 18599</li>
+  <li>Ermittlung von Lastkurven</li>
+  <li>Schwachstellenanalyse und Bewertung</li>
+  <li>Maßnahmenvorschläge mit Variantenkatalog</li>
+  <li>Vorschläge zur Senkung der Energiekosten, auch mit geringen Investitionen</li>
+  <li>Prüfung alternativer Anlagentechniken (z.B. Kraft-Wärmekopplung, Wärmerückgewinnung sowie regenerativer Energien)</li>
+  <li>Wirtschaftlichkeits-, Umwelt- und Marketingbewertung</li>
+  <li>Optimierung der Energielieferverträge</li>
+  <li>Fördermittelhilfe für Einsparinvestitionen</li>
+</div>
+
+  <div *ngIf="produkt.id == 12">
+
+    <h2>Luftdichtigkeitsmessungen und Thermografieuntersuchungen</h2>
+    <div>
+      In vielen Gebäuden treten hohe Wärmeverluste und Bauschäden wegen mangelnder Luftabdichtung der Außenhülle auf.
+    </div>
+    <li>Wie hoch sind die Wärmeverluste durch fehlerhafte Abdichtungen?</li>
+    <li>Durch welche Maßnahmen können die Wärmeverluste vermieden werden?</li>
+    <li>Wo im Gebäude sollte die Luftabdichtung verbessert werden?</li>
+    <div>
+      Wir beraten Sie und führen Messungen mit dem Blower-Door-Verfahren und Thermografien durch. Dies rechnet sich für den Investor besonders während der Bauphase, wenn Fehler noch rechtzeitig verhindert werden können.
+    </div>
+    <div>
+      Thermografie- und Blower-Door-Untersuchungen eines Gebäudes älter Baujahr 1995 können im Rahmen einer Vor-Ort-Beratung gefördert werden.
+    </div>
   </div>
 
+  <div *ngIf="produkt.id == 13">
+
+    <h2>Projektierung und Simulationen von Photovoltaikanlagen</h2>
+    <li>Überprüfung der Eignung des Hauses für die Photovoltaikinstallation</li>
+    <li>Auslegung und Simulation der Solarstromanlage</li>
+    <li>Wirtschaftlichkeitsberechnung</li>
+    <li>Wie viel Strom liefert eine Photovoltaik-Anlage am Standort bei gegebener Ausrichtung und Neigung?</li>
+    <li>Die Einstrahlungsverluste durch eine Verschattung werden ermittelt und Lösungsvorschläge zu Anordnung und Aufbau der Anlage gegeben.</li>
+    <li>Ist zum Beispiel eine architektonische Integration sinnvoll?/li>
+    <li>Welche interne Verschaltung sollte gewählt werden um die Verluste zu minimieren?</li>
+    <div>
+      Diese und andere Fragen können unsere Experten für eine konkretes Objekt beantworten. Dazu erfolgt mit Simulationsprogrammen eine Ertragsanalyse auf Grundlage der jeweiligen Klimadaten.
+    </div>
+    <h2>Sachverständigengutachten für Photovoltaikanlagen</h2>
+    <div>Photovoltaikanlagen werden für eine lange Lebensdauer geplant. Wir führen Bauabnahmen durch und kontrollieren Anlagen auf Einhaltung der Normen und Mindeststandards. Auch wenn Probleme bei der Installation oder im Betrieb von PV-Anlagen auftauchen können wir Sie unterstützen.</div>
+  </div>
+
+
+  <div *ngIf="produkt.id == 14">
+
+    <h2>Projektmanagement und Unternehmensberatung</h2>
+    <div>
+      Sie interessieren sich für das Thema: Energie intelligent nutzen?
+
+<br><br><br>
+
+      Unsere Dienstleistungen für Sie:
+    </div>
+    <li>Technologie- und Innovationsberatung</li>
+    <li>Forschung und Entwicklung</li>
+    <li>Projektmanagement</li>
+    <li>Schulungen, Seminare, Vorträge</li>
+    <div>
+      Nehmen Sie mit uns Kontakt auf!
+    </div>
+  </div>
+  <div *ngIf="produkt.id == 15">
+
+    <h2>Elektrofahrzeuge CityEL</h2>
+    <div>
+      Der CityEL ist ein Kleinfahrzeug für eine Person..
+    </div>
+    <div>
+      Ob als Zweitwagen oder für Kurierdienste - er ist günstiger im Betrieb als gewöhnliche Kleinwagen und eignet sich hervorragend für den Stadtverkehr.
+    </div>
+    <div>
+      Der CityEL steht für den intelligenten Umgang mit Mobilität. Daher wird er oft erfolgreich als Image- und Werbeträger eingesetzt.
+    </div>
+    <div>
+      Der CityEL ist das umweltfreundliche, preiswerte und sichere Fahrzeug für Ihre täglichen Mobilitätsbedürfnisse. 75% der PKWs sind mit nur einer Person besetzt und werden täglich weniger als 25 km genutzt. Die Antwort drauf ist der CityEL von der Smiles AG aus Aub / Unterfranken. Er verbindet die Vorteile eines Autos - Wetterschutz, Zulademöglichkeit, Insassenschutz - mit den  Unterhaltskosten eines Motorrollers.
+    </div>
+    <div>
+      Der CityEL ist sehr wendig und es macht einfach Spaß mit ihm zu fahren. Um den CityEL dahingleiten zu lassen sind durchschnittlich 6-8 kWh Strom für 100 km Fahrstrecke nötig. Die Energiekosten liegen bei etwa 0,75 Euro und entsprechen dem Verbrauch eines 0,7-Liter Autos. Die ersten 5 Jahre fahren Sie steuerfrei, danach für 11 Euro Steuer im Jahr! Eine Haftpflichtversicherung ist für ca. 68 Euro im Jahr zu haben.    </div>
+    <div>
+      Ob mit ihm aufzufallen oder Geld zu verdienen - der CityEL ist auch ein idealer Werbeträger!    </div>
+  </div>
 </div>
-<button (click)="goBack()">go back</button>
+<!-- <button (click)="goBack()">go back</button> -->

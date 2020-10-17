@@ -18,7 +18,9 @@ export class AngebotDetailComponent implements OnInit {
     private location: Location
   ) { }
 
-  produkt: Produkt;
+  @Input() produkt: Produkt;
+
+
 
   ngOnInit(): void {
     this.getProdukt();
