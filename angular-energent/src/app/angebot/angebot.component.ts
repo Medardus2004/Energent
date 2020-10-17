@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Produkt} from "../Produkt";
 import {Produkte} from "../ProduktListe"
+import {AngebotService} from "../angebot.service"
+
 
 @Component({
   selector: 'app-angebot',
@@ -12,13 +14,18 @@ export class AngebotComponent implements OnInit {
   produkte = Produkte;
   selectedProdukt: Produkt;
 
+  getProdukte(): void {
+    this.produkte = this.angebotService.getProdukte();
+  }
+
   onSelect(produkt: Produkt): void {
     this.selectedProdukt = produkt;
   }
 
-  constructor() { }
+  constructor(private angebotService: AngebotService) { }
 
   ngOnInit(): void {
+    this.getProdukte();
   }
 
 }
