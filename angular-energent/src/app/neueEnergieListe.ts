@@ -1,4 +1,4 @@
-import { NeueEnergie } from './NeueEnergie';
+import { NeueEnergie } from './neueEnergie';
 
 export const NeueEnergien: NeueEnergie[] = [
   { id: 1, name: 'Solarenergie' },
